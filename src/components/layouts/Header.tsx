@@ -1,12 +1,16 @@
 import Image from 'next/image';
 
-import { logo } from '@/assets';
+import {
+  githubLogo,
+  linkedinLogo,
+  logo,
+} from '@/assets';
 
 const Header = () => {
   const tes: string = "heaswe";
   return (
-    <nav className="bg-gray-800">
-      <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+    <nav className=" fixed top-0 left-0 right-0 z-20 backdrop-blur bg-gray-800/50">
+      <div className="mx-auto max-w-8xl px-2 sm:px-6 lg:px-8">
         <div className="relative flex h-16 items-center justify-between">
           <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <button
@@ -47,69 +51,26 @@ const Header = () => {
           </div>
           <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex flex-shrink-0 items-center">
-              <Image className="h-8 w-auto" src={logo} alt="Your Company" />
-            </div>
-            <div className="hidden sm:ml-6 sm:block">
-              <div className="flex space-x-4">
-                <a
-                  href="#"
-                  className="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium"
-                  aria-current="page"
-                >
-                  Showcase
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                >
-                  My Resume
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                >
-                  Profile
-                </a>
-                <a
-                  href="#"
-                  className="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"
-                >
-                  Blog
-                </a>
-              </div>
+              <Image className="h-5 w-auto" src={logo} alt="Your Company" />
+              <h1 className="text-zinc-50 font-semibold text-2xl ml-2">Jeevva</h1>
             </div>
           </div>
-         
-        </div>
-      </div>
-
-      <div className="sm:hidden" id="mobile-menu">
-        <div className="space-y-1 px-2 pb-3 pt-2">
-          <a
-            href="#"
-            className="bg-gray-900 text-white block rounded-md px-3 py-2 text-base font-medium"
-            aria-current="page"
-          >
-            Showcase
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
-            My Resume
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
-            Profile
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-          >
-            Blog
-          </a>
+          <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-end ">
+            <a
+              className="flex flex-shrink-0  mr-4 cursor-pointer"
+              target="_blank"
+              href="https://www.linkedin.com/in/harun-al-rosyid-bb5ba2161/"
+            >
+              <Image className="h-5 w-auto" src={linkedinLogo} alt="Linkedin Logo" />
+            </a>
+            <a
+              className="flex flex-shrink-0 cursor-pointer"
+              target="_blank"
+              href="https://github.com/jeevva"
+            >
+              <Image className="h-5 w-auto" src={githubLogo} alt="Github-Logo" />
+            </a>
+          </div>
         </div>
       </div>
     </nav>

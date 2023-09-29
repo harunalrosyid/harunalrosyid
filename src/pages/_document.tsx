@@ -9,13 +9,13 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-      <link rel="shortcut icon"   href="/favicon.ico" />
-      <title>Jevvaa</title>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>Jeevva</title>
       </Head>
-      <body>
+      <body className='bg-gray-800'>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
