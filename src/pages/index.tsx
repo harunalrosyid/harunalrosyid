@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Inter } from 'next/font/google';
 import Image from 'next/image';
 
@@ -18,7 +19,7 @@ export default function Home() {
             Jeevva is the personal branding of a Front End Developer
           </p>
           <p className="text-zinc-50 text-5xl text-left font-semibold">
-            {/* Let's call him "Harun Al Rosyid" */}
+            Let's call him "Harun Al Rosyid"
           </p>
         </div>
         <div>
